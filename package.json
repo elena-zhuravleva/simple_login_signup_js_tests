@@ -1,0 +1,1 @@
+{"name":"javascript-examples","version":"1.0.0","scripts":{"tests":"npx mocha tests/*.spec.js --timeout 60000"},"dependencies":{"assert":"^2.0.0","dotenv":"^16.4.5","mocha":"^10.2.0","selenium-webdriver":"^4.15.0"},"devDependencies":{"flush-cache":"^1.0.1"}}
