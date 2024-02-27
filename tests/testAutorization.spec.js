@@ -1,12 +1,12 @@
-import { driver, assert, By, mainURL } from "../init";
+const {driver, assert, By, mainURL} = require("../init");
 
 (async function firstTest() {
-  
   try {
     await driver.get(mainURL);
     let title = await driver.getTitle();
     assert.equal("Web form", title);
     console.log(title)
+
 
     await driver.manage().setTimeouts({implicit: 5000});
     let loginLink = await driver.findElement(By.xpath("//span[contains(text(),'Log in')]")).findElement(By.xpath("./.."));
